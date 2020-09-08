@@ -14,6 +14,8 @@ public struct ProgressBar: View {
     @State private var schedule = 0
     private let count = 12
     
+    public init(){}
+    
     public var body: some View{
         ZStack{
             ForEach(0..<self.count){ i in

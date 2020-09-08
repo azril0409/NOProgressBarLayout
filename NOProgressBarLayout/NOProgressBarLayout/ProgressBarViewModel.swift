@@ -10,6 +10,7 @@ import SwiftUI
 
 public class ProgressBarViewModel:ObservableObject {
     @Published var isShowing = false
+    public init(){}
     
     public func show(){
         DispatchQueue.main.async {
