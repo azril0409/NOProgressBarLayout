@@ -8,8 +8,9 @@
 
 import SwiftUI
 
-public class ProgressBarViewModel:ObservableObject {
+public class NOProgressBarViewModel:ObservableObject {
     @Published var isShowing = false
+    
     public init(){}
     
     public func show(){

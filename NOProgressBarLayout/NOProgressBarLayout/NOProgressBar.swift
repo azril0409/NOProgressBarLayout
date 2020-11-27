@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-public struct ProgressBar: View {
+public struct NOProgressBar: View {
     public var stickHeight:CGFloat = 20
     @State var spinCircle = false
     @State private var schedule = 0
@@ -35,10 +35,10 @@ public struct ProgressBar: View {
 }
 
 #if DEBUG
-struct ProgressBar_Previews: PreviewProvider {
+struct NOProgressBarr_Previews: PreviewProvider {
     static var previews: some View {
         ZStack{
-        ProgressBar()
+            NOProgressBar()
         }.frame(maxWidth: .infinity, maxHeight: .infinity).edgesIgnoringSafeArea(.all).background(Color.gray)
     }
 }

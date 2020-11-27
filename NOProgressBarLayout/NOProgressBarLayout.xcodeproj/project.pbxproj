@@ -7,19 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		744125222500F29C005A5EC9 /* ProgressBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744125212500F29C005A5EC9 /* ProgressBarViewModel.swift */; };
+		744125222500F29C005A5EC9 /* NOProgressBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744125212500F29C005A5EC9 /* NOProgressBarViewModel.swift */; };
+		747127FF2570F50D00FD2069 /* NOProgressBarLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74A4A5F524FF2A310060537D /* NOProgressBarLayout.framework */; };
+		747128002570F50D00FD2069 /* NOProgressBarLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74A4A5F524FF2A310060537D /* NOProgressBarLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74A4A5FA24FF2A310060537D /* NOProgressBarLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 74A4A5F824FF2A310060537D /* NOProgressBarLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		74A4A60124FF2B5F0060537D /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4A60024FF2B5F0060537D /* ProgressBar.swift */; };
-		74A4A60324FF2FF90060537D /* ProgressBarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4A60224FF2FF90060537D /* ProgressBarLayout.swift */; };
+		74A4A60124FF2B5F0060537D /* NOProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4A60024FF2B5F0060537D /* NOProgressBar.swift */; };
+		74A4A60324FF2FF90060537D /* NOProgressBarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4A60224FF2FF90060537D /* NOProgressBarLayout.swift */; };
+		74C6B58C2570A8E000C32DE2 /* NOProgressOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C6B58B2570A8E000C32DE2 /* NOProgressOverlayView.swift */; };
+		74C6B5B22570EEFE00C32DE2 /* NOProgressModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C6B5B12570EEFE00C32DE2 /* NOProgressModifier.swift */; };
+		74C6B5BC2570EFAA00C32DE2 /* SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C6B5BB2570EFAA00C32DE2 /* SampleApp.swift */; };
+		74C6B5BE2570EFAA00C32DE2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C6B5BD2570EFAA00C32DE2 /* ContentView.swift */; };
+		74C6B5C02570EFAF00C32DE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74C6B5BF2570EFAF00C32DE2 /* Assets.xcassets */; };
+		74C6B5C32570EFAF00C32DE2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74C6B5C22570EFAF00C32DE2 /* Preview Assets.xcassets */; };
+		74DFBD2C257109130062D098 /* NOProgressEnvironmentOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DFBD2B257109130062D098 /* NOProgressEnvironmentOverlay.swift */; };
+		74DFBD2F25710A180062D098 /* NOProgressEnvironmentModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DFBD2E25710A180062D098 /* NOProgressEnvironmentModifier.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		747128012570F50D00FD2069 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74A4A5EC24FF2A310060537D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74A4A5F424FF2A310060537D;
+			remoteInfo = NOProgressBarLayout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		747128032570F50D00FD2069 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				747128002570F50D00FD2069 /* NOProgressBarLayout.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		744125212500F29C005A5EC9 /* ProgressBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarViewModel.swift; sourceTree = "<group>"; };
+		744125212500F29C005A5EC9 /* NOProgressBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NOProgressBarViewModel.swift; sourceTree = "<group>"; };
 		74A4A5F524FF2A310060537D /* NOProgressBarLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NOProgressBarLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A4A5F824FF2A310060537D /* NOProgressBarLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NOProgressBarLayout.h; sourceTree = "<group>"; };
 		74A4A5F924FF2A310060537D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		74A4A60024FF2B5F0060537D /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
-		74A4A60224FF2FF90060537D /* ProgressBarLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarLayout.swift; sourceTree = "<group>"; };
+		74A4A60024FF2B5F0060537D /* NOProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NOProgressBar.swift; sourceTree = "<group>"; };
+		74A4A60224FF2FF90060537D /* NOProgressBarLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NOProgressBarLayout.swift; sourceTree = "<group>"; };
+		74C6B58B2570A8E000C32DE2 /* NOProgressOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NOProgressOverlayView.swift; sourceTree = "<group>"; };
+		74C6B5B12570EEFE00C32DE2 /* NOProgressModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NOProgressModifier.swift; sourceTree = "<group>"; };
+		74C6B5B92570EFAA00C32DE2 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74C6B5BB2570EFAA00C32DE2 /* SampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleApp.swift; sourceTree = "<group>"; };
+		74C6B5BD2570EFAA00C32DE2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		74C6B5BF2570EFAF00C32DE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74C6B5C22570EFAF00C32DE2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		74C6B5C42570EFAF00C32DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74DFBD2B257109130062D098 /* NOProgressEnvironmentOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NOProgressEnvironmentOverlay.swift; sourceTree = "<group>"; };
+		74DFBD2E25710A180062D098 /* NOProgressEnvironmentModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NOProgressEnvironmentModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,14 +74,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		74C6B5B62570EFAA00C32DE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				747127FF2570F50D00FD2069 /* NOProgressBarLayout.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		747127FE2570F50D00FD2069 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		74A4A5EB24FF2A310060537D = {
 			isa = PBXGroup;
 			children = (
 				74A4A5F724FF2A310060537D /* NOProgressBarLayout */,
+				74C6B5BA2570EFAA00C32DE2 /* Sample */,
 				74A4A5F624FF2A310060537D /* Products */,
+				747127FE2570F50D00FD2069 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				74A4A5F524FF2A310060537D /* NOProgressBarLayout.framework */,
+				74C6B5B92570EFAA00C32DE2 /* Sample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,13 +114,37 @@
 		74A4A5F724FF2A310060537D /* NOProgressBarLayout */ = {
 			isa = PBXGroup;
 			children = (
-				74A4A5F824FF2A310060537D /* NOProgressBarLayout.h */,
 				74A4A5F924FF2A310060537D /* Info.plist */,
-				74A4A60024FF2B5F0060537D /* ProgressBar.swift */,
-				74A4A60224FF2FF90060537D /* ProgressBarLayout.swift */,
-				744125212500F29C005A5EC9 /* ProgressBarViewModel.swift */,
+				74A4A60024FF2B5F0060537D /* NOProgressBar.swift */,
+				74A4A5F824FF2A310060537D /* NOProgressBarLayout.h */,
+				744125212500F29C005A5EC9 /* NOProgressBarViewModel.swift */,
+				74C6B5B12570EEFE00C32DE2 /* NOProgressModifier.swift */,
+				74C6B58B2570A8E000C32DE2 /* NOProgressOverlayView.swift */,
+				74A4A60224FF2FF90060537D /* NOProgressBarLayout.swift */,
+				74DFBD2B257109130062D098 /* NOProgressEnvironmentOverlay.swift */,
+				74DFBD2E25710A180062D098 /* NOProgressEnvironmentModifier.swift */,
 			);
 			path = NOProgressBarLayout;
+			sourceTree = "<group>";
+		};
+		74C6B5BA2570EFAA00C32DE2 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				74C6B5BB2570EFAA00C32DE2 /* SampleApp.swift */,
+				74C6B5BD2570EFAA00C32DE2 /* ContentView.swift */,
+				74C6B5BF2570EFAF00C32DE2 /* Assets.xcassets */,
+				74C6B5C42570EFAF00C32DE2 /* Info.plist */,
+				74C6B5C12570EFAF00C32DE2 /* Preview Content */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		74C6B5C12570EFAF00C32DE2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				74C6B5C22570EFAF00C32DE2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,18 +179,41 @@
 			productReference = 74A4A5F524FF2A310060537D /* NOProgressBarLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		74C6B5B82570EFAA00C32DE2 /* Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74C6B5C52570EFAF00C32DE2 /* Build configuration list for PBXNativeTarget "Sample" */;
+			buildPhases = (
+				74C6B5B52570EFAA00C32DE2 /* Sources */,
+				74C6B5B62570EFAA00C32DE2 /* Frameworks */,
+				74C6B5B72570EFAA00C32DE2 /* Resources */,
+				747128032570F50D00FD2069 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				747128022570F50D00FD2069 /* PBXTargetDependency */,
+			);
+			name = Sample;
+			productName = Sample;
+			productReference = 74C6B5B92570EFAA00C32DE2 /* Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		74A4A5EC24FF2A310060537D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = NeetOffice;
 				TargetAttributes = {
 					74A4A5F424FF2A310060537D = {
 						CreatedOnToolsVersion = 11.6;
 						LastSwiftMigration = 1160;
+					};
+					74C6B5B82570EFAA00C32DE2 = {
+						CreatedOnToolsVersion = 12.2;
 					};
 				};
 			};
@@ -122,6 +231,7 @@
 			projectRoot = "";
 			targets = (
 				74A4A5F424FF2A310060537D /* NOProgressBarLayout */,
+				74C6B5B82570EFAA00C32DE2 /* Sample */,
 			);
 		};
 /* End PBXProject section */
@@ -134,6 +244,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		74C6B5B72570EFAA00C32DE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74C6B5C32570EFAF00C32DE2 /* Preview Assets.xcassets in Resources */,
+				74C6B5C02570EFAF00C32DE2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,13 +260,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74A4A60124FF2B5F0060537D /* ProgressBar.swift in Sources */,
-				744125222500F29C005A5EC9 /* ProgressBarViewModel.swift in Sources */,
-				74A4A60324FF2FF90060537D /* ProgressBarLayout.swift in Sources */,
+				74DFBD2F25710A180062D098 /* NOProgressEnvironmentModifier.swift in Sources */,
+				74DFBD2C257109130062D098 /* NOProgressEnvironmentOverlay.swift in Sources */,
+				74A4A60124FF2B5F0060537D /* NOProgressBar.swift in Sources */,
+				744125222500F29C005A5EC9 /* NOProgressBarViewModel.swift in Sources */,
+				74C6B58C2570A8E000C32DE2 /* NOProgressOverlayView.swift in Sources */,
+				74A4A60324FF2FF90060537D /* NOProgressBarLayout.swift in Sources */,
+				74C6B5B22570EEFE00C32DE2 /* NOProgressModifier.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74C6B5B52570EFAA00C32DE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74C6B5BE2570EFAA00C32DE2 /* ContentView.swift in Sources */,
+				74C6B5BC2570EFAA00C32DE2 /* SampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		747128022570F50D00FD2069 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74A4A5F424FF2A310060537D /* NOProgressBarLayout */;
+			targetProxy = 747128012570F50D00FD2069 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		74A4A5FB24FF2A310060537D /* Debug */ = {
@@ -282,6 +422,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = NOProgressBarLayout/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +449,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = NOProgressBarLayout/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,6 +458,50 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.neetoffice.app.NOProgressBarLayout;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		74C6B5C62570EFAF00C32DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Sample/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Sample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neetoffice.app.NOProgressBarLayout.Sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		74C6B5C72570EFAF00C32DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Sample/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Sample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neetoffice.app.NOProgressBarLayout.Sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -338,6 +524,15 @@
 			buildConfigurations = (
 				74A4A5FE24FF2A310060537D /* Debug */,
 				74A4A5FF24FF2A310060537D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74C6B5C52570EFAF00C32DE2 /* Build configuration list for PBXNativeTarget "Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74C6B5C62570EFAF00C32DE2 /* Debug */,
+				74C6B5C72570EFAF00C32DE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
