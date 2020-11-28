@@ -33,7 +33,7 @@ public struct NOProgressOverlayView: View {
     }
     
     public init<ProgressBar:View>(_ progressBar:ProgressBar,
-                _ isShowing:Binding<Bool>){
+                                  _ isShowing:Binding<Bool>){
         self.viewModel = NOProgressBarViewModel()
         self._isShowing = isShowing
         self.progressBar = AnyView(progressBar)
@@ -47,9 +47,28 @@ public struct NOProgressOverlayView: View {
             }
         }
         .animation(.spring())
-        .frame(width: UIApplication.shared.windows.first?.screen.bounds.width ?? .none,
-               height: UIApplication.shared.windows.first?.screen.bounds.height ?? .none)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .frame(width: self.getScreenWidth(),
+               height: self.getScreenHeight())
+    }
+    
+    private func getScreenWidth() -> CGFloat{
+        #if os(watchOS)
+        return WKInterfaceDevice.current().screenBounds.size.width
+        #elseif os(iOS)
+        return UIScreen.main.bounds.width
+        #elseif os(macOS)
+        return NSScreen.main.bounds.size.width
+        #endif
+    }
+    
+    private func getScreenHeight() -> CGFloat{
+        #if os(watchOS)
+        return WKInterfaceDevice.current().screenBounds.size.height
+        #elseif os(iOS)
+        return UIScreen.main.bounds.height
+        #elseif os(macOS)
+        return NSScreen.main.bounds.size.height
+        #endif
     }
 }
 
