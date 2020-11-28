@@ -54,20 +54,20 @@ public struct NOProgressOverlayView: View {
     private func getScreenWidth() -> CGFloat{
         #if os(watchOS)
         return WKInterfaceDevice.current().screenBounds.size.width
-        #elseif os(iOS)
-        return UIScreen.main.bounds.width
         #elseif os(macOS)
         return NSScreen.main.bounds.size.width
+        #else
+        return UIScreen.main.bounds.width
         #endif
     }
     
     private func getScreenHeight() -> CGFloat{
         #if os(watchOS)
         return WKInterfaceDevice.current().screenBounds.size.height
-        #elseif os(iOS)
-        return UIScreen.main.bounds.height
         #elseif os(macOS)
         return NSScreen.main.bounds.size.height
+        #else
+        return UIScreen.main.bounds.height
         #endif
     }
 }
