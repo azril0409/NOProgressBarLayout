@@ -47,28 +47,8 @@ public struct NOProgressOverlayView: View {
             }
         }
         .animation(.spring())
-        .frame(width: self.getScreenWidth(),
-               height: self.getScreenHeight())
-    }
-    
-    private func getScreenWidth() -> CGFloat{
-        #if os(watchOS)
-        return WKInterfaceDevice.current().screenBounds.size.width
-        #elseif os(macOS)
-        return NSScreen.main.bounds.size.width
-        #else
-        return UIScreen.main.bounds.width
-        #endif
-    }
-    
-    private func getScreenHeight() -> CGFloat{
-        #if os(watchOS)
-        return WKInterfaceDevice.current().screenBounds.size.height
-        #elseif os(macOS)
-        return NSScreen.main.bounds.size.height
-        #else
-        return UIScreen.main.bounds.height
-        #endif
+        .frame(width: UIScreen.main.bounds.width,
+               height: UIScreen.main.bounds.height)
     }
 }
 
