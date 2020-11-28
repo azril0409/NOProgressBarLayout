@@ -64,6 +64,7 @@
 		74C6B5C42570EFAF00C32DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74DFBD2B257109130062D098 /* NOProgressEnvironmentOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NOProgressEnvironmentOverlay.swift; sourceTree = "<group>"; };
 		74DFBD2E25710A180062D098 /* NOProgressEnvironmentModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NOProgressEnvironmentModifier.swift; sourceTree = "<group>"; };
+		74DFBD31257221860062D098 /* Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sample.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +131,7 @@
 		74C6B5BA2570EFAA00C32DE2 /* Sample */ = {
 			isa = PBXGroup;
 			children = (
+				74DFBD31257221860062D098 /* Sample.entitlements */,
 				74C6B5BB2570EFAA00C32DE2 /* SampleApp.swift */,
 				74C6B5BD2570EFAA00C32DE2 /* ContentView.swift */,
 				74C6B5BF2570EFAF00C32DE2 /* Assets.xcassets */,
@@ -469,6 +471,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = Sample/Sample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Sample/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
@@ -480,6 +483,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.neetoffice.app.NOProgressBarLayout.Sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -491,6 +495,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = Sample/Sample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Sample/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
@@ -502,6 +507,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.neetoffice.app.NOProgressBarLayout.Sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

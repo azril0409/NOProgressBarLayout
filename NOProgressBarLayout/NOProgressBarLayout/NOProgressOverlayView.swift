@@ -47,8 +47,9 @@ public struct NOProgressOverlayView: View {
             }
         }
         .animation(.spring())
-        .frame(width: UIScreen.main.bounds.width,
-               height: UIScreen.main.bounds.height)
+        .frame(width: UIApplication.shared.windows.first?.screen.bounds.width ?? .none,
+               height: UIApplication.shared.windows.first?.screen.bounds.height ?? .none)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 

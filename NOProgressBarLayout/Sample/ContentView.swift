@@ -14,7 +14,7 @@ struct ContentView: View {
     @State private var isShowing = false
     
     var body: some View {
-        ZStack{
+        VStack{
             Button(action: {
                 self.progressBarViewModel.show()
                 self.isShowing = true
@@ -26,11 +26,13 @@ struct ContentView: View {
                 Text("Hello, world!")
                     .padding()
             })
+            .modifier(NOProgressEnvironmentModifier())
             //.overlay(NOProgressEnvironmentOverlay())
             //.modifier(NOProgressModifier(self.progressBarViewModel))
             //.modifier(NOProgressModifier(self.$isShowing))
+            Spacer()
         }
-        .modifier(NOProgressEnvironmentModifier())
+        //.modifier(NOProgressEnvironmentModifier())
     }
 }
 
