@@ -51,18 +51,3 @@ public struct NOProgressOverlayView: View {
                height: UIScreen.main.bounds.height)
     }
 }
-
-#if DEBUG
-struct NOProgressOverlayView_Previews: PreviewProvider {
-    static var previews: some View {
-        let progressBarViewModel = NOProgressBarViewModel()
-        return //ProgressBarLayout(viewModel: progressBarViewModel){
-            Button(action: {
-                progressBarViewModel.toggle()
-            }, label: {
-                Text("Button")
-            }).overlay(NOProgressOverlayView(Binding<Bool>(get: { true }, set: {_ in})))
-        //}
-    }
-}
-#endif

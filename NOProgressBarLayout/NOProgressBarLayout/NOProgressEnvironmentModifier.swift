@@ -25,21 +25,3 @@ public struct NOProgressEnvironmentModifier: ViewModifier {
                                               viewModel: self.viewModel))
     }
 }
-
-#if DEBUG
-struct NOProgressEnvironmentModifier_Previews: PreviewProvider {
-    static var previews: some View {
-        let viewModel = NOProgressBarViewModel()
-        return Button(action: {
-            viewModel.show()
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                viewModel.dismiss()
-            }
-        }, label: {
-            Text("Button")
-        })
-        .modifier(NOProgressEnvironmentModifier())
-        .environmentObject(viewModel)
-    }
-}
-#endif

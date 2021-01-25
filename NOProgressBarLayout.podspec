@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "NOProgressBarLayout"
-  spec.version      = "1.0.6"
+  spec.version      = "1.0.7"
   spec.summary      = "ProgressBar Layout for SwiftUI."
 
   # This description is used to generate tags and improve search results.
@@ -82,9 +82,9 @@ limitations under the License.
 
   #  When using multiple platforms
   spec.ios.deployment_target = "13.0"
-  spec.osx.deployment_target = "10.15"
-  spec.watchos.deployment_target = "6.0"
-  spec.tvos.deployment_target = "13.0"
+  #spec.osx.deployment_target = "10.15"
+  #spec.watchos.deployment_target = "6.0"
+  #spec.tvos.deployment_target = "13.0"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

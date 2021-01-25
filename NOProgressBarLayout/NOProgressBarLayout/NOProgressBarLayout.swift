@@ -35,24 +35,3 @@ public struct NOProgressBarLayout<Content:View>: View {
                                        viewModel: self.viewModel))
     }
 }
-
-#if DEBUG
-struct NOProgressBarLayout_Previews: PreviewProvider {
-    static var previews: some View {
-        let viewModel = NOProgressBarViewModel()
-        return NOProgressBarLayout{
-            Button(action: {
-                viewModel.show()
-                DispatchQueue.main.asyncAfter(deadline: .now()+3) {
-                    viewModel.dismiss()
-                }
-            }) {Text("Hello, World!").padding()}
-            .background(Color.red)
-            .overlay(Image(systemName: "pencil.and.outline"))
-            .overlay(Image(systemName: "square.and.arrow.up"))
-        }
-        .background(Color.yellow)
-        .environmentObject(viewModel)
-    }
-}
-#endif

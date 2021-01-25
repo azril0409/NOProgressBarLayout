@@ -33,13 +33,3 @@ public struct NOProgressBar: View {
         return Double(i+1)/Double(self.count+1)
     }
 }
-
-#if DEBUG
-struct NOProgressBarr_Previews: PreviewProvider {
-    static var previews: some View {
-        ZStack{
-            NOProgressBar()
-        }.frame(maxWidth: .infinity, maxHeight: .infinity).edgesIgnoringSafeArea(.all).background(Color.gray)
-    }
-}
-#endif
